@@ -3,6 +3,7 @@ package edu.washington.gulabry.quizapp;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,7 +33,9 @@ public class MainActivity extends ActionBarActivity {
                 Intent next = new Intent(MainActivity.this, quizOverview.class);
                 String topic = listView.getItemAtPosition(position).toString();
                 next.putExtra("topic", topic);
+                Log.i("Debug", "Topic = " + topic);
                 startActivity(next);
+
             }
         });
 

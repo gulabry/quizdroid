@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.washington.gulabry.quizapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".Quiz"
+            android:label="@string/title_activity_quiz" >
+        </activity>
+        <activity
+            android:name=".AnswerOverview"
+            android:label="@string/title_activity_answer_overview" >
+        </activity>
     </application>
 
 </manifest>
