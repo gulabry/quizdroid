@@ -39,7 +39,7 @@ public class quizOverview extends ActionBarActivity {
         mathQuestions.add(math4);
 
         final ArrayList<Question> physicsQuestions = new ArrayList<>();
-        Question phy1 = new Question("If you throw something where does it go?", new String[]{"Up", "Down", "Up THEN Down", "Down THEN Up"}, 4);
+        Question phy1 = new Question("If you throw something where does it go?", new String[]{"Up", "Down", "Up THEN Down", "Down THEN Up"}, 1);
         Question phy2 = new Question("E = MC ^ 2 was posited by..?", new String[]{"You", "Albert Einstein", "Obama", "Down THEN Up"}, 2);
         Question phy3 = new Question("Was Y2K real?", new String[]{"Yes", "Maybe", "No", "Down THEN Up"}, 3);
 
@@ -85,7 +85,6 @@ public class quizOverview extends ActionBarActivity {
                     questionBundle.putSerializable("serializedQuestions", physicsQuestions);
 
                 } else {
-
                     questionBundle.putSerializable("serializedQuestions", mshQs);
                 }
 

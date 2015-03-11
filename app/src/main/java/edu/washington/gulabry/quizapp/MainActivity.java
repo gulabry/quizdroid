@@ -30,12 +30,11 @@ public class MainActivity extends ActionBarActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent next = new Intent(MainActivity.this, quizOverview.class);
-                String topic = listView.getItemAtPosition(position).toString();
-                next.putExtra("topic", topic);
-                Log.i("Debug", "Topic = " + topic);
+                Intent next = new Intent(MainActivity.this, QuizFragments.class); //pops to fragments now
+                Bundle topic = new Bundle();
+                topic.putString("topic", listView.getItemAtPosition(position).toString());
+                Log.i("Debug", "Topic = " + listView.getItemAtPosition(position).toString());
                 startActivity(next);
-
             }
         });
 

@@ -32,6 +32,10 @@
             android:name=".AnswerOverview"
             android:label="@string/title_activity_answer_overview" >
         </activity>
+        <activity
+            android:name=".QuizFragments"
+            android:label="@string/title_activity_quiz_fragments" >
+        </activity>
     </application>
 
 </manifest>

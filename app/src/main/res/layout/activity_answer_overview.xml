@@ -25,7 +25,10 @@
         android:id="@+id/userAnswer"
         android:paddingBottom="10dp"
         android:layout_below="@+id/ansSum"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +39,9 @@
         android:layout_below="@+id/userAnswer"
         android:layout_alignLeft="@+id/userAnswer"
         android:layout_alignStart="@+id/userAnswer"
-        android:paddingBottom="10dp" />
+        android:paddingBottom="10dp"
+        android:layout_alignRight="@+id/userAnswer"
+        android:layout_alignEnd="@+id/userAnswer" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +51,9 @@
         android:id="@+id/total"
         android:layout_below="@+id/correctAnswer"
         android:layout_alignLeft="@+id/correctAnswer"
-        android:layout_alignStart="@+id/correctAnswer" />
+        android:layout_alignStart="@+id/correctAnswer"
+        android:layout_alignRight="@+id/correctAnswer"
+        android:layout_alignEnd="@+id/correctAnswer" />
 
     <Button
         android:layout_width="wrap_content"
